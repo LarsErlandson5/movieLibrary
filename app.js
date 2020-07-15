@@ -22,8 +22,8 @@ function buildTable(input) {
             <td>${input[i].releaseDate}</td>
 
         </tr>`
-        
+
     }
 table.innerHTML = row;
 }
-
+// test test
