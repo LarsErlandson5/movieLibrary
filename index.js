@@ -19,22 +19,22 @@ app.get("/api/movies", (req, res) => {
 });
 app.get("/api/movies/:id", (req, res) => {
     let id = req.params.id;
-    let movies = repoContext.movies.findMoviesById(id);
+    let movies = repoContext.movies.findMovieById(id);
     res.send(movies);
 });
 app.post("/api/movies", (req, res) => {
     let newMovies = req.body;
-    let addedMovies = repoContext.movies.createMovies(newMovies);
+    let addedMovies = repoContext.movies.createMovie(newMovies);
     res.send(addedMovies);
 });
 app.put("/api/movies", (req, res) => {
     let moviesToUpdate = req.body;
-    let updatedMovies = repoContext.movies.updateMovies(moviesToUpdate);
+    let updatedMovies = repoContext.movies.updateMovie(moviesToUpdate);
     res.send(updatedMovies);
 });
 app.delete("/api/movies/:id", (req, res) => {
     let id = req.params.id;
-    let updatedDataSet = repoContext.movies.deleteMovies(id);
+    let updatedDataSet = repoContext.movies.deleteMovie(id);
 });
 app.get("/api/movies", (req, res) => {
     let movies = repoContext.movies.findAllMovies();
@@ -42,21 +42,21 @@ app.get("/api/movies", (req, res) => {
 });
 app.get("/api/movies/:id", (req, res) => {
     let id = req.params.id;
-    let movies = repoContext.movies.findMoviesById(id);
+    let movies = repoContext.movies.findMovieById(id);
     res.send(movies);
 });
 app.post("/api/movies", (req, res) => {
     let newMovies = req.body;
-    let addedMovies = repoContext.movies.createMovies(newMovies);
+    let addedMovies = repoContext.movies.createMovie(newMovies);
     res.send(addedMovies);
 });
 app.put("/api/products", (req, res) => {
     let moviesToUpdate = req.body;
-    let updatedmovies = repoContext.movies.updateMovies(moviesToUpdate);
+    let updatedmovies = repoContext.movies.updateMovie(moviesToUpdate);
     res.send(updatedmovies);
 });
 app.delete("/api/products/:id", (req, res) => {
     let id = req.params.id;
-    let updatedDataSet = repoContext.movies.deleteMovies(id);
+    let updatedDataSet = repoContext.movies.deleteMovie(id);
     res.send(updatedDataSet);
 });
