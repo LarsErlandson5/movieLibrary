@@ -1,4 +1,5 @@
 const { isNullOrUndefined, isString, isNumber } = require("util");
+
 function isNotEmptyAndIsString(value) {
  return !isNullOrUndefined(value) && isString(value);
 }
@@ -13,10 +14,10 @@ exports.body = (req, res, next) => {
  (method == "POST"
  ? isNullOrUndefined(data.id)
  : isNotEmptyAndIsNumber(data.id)) &&
- isNotEmptyAndIsString(data.name) &&
- isNotEmptyAndIsString(data.description) &&
- isNotEmptyAndIsString(data.category) &&
- isNotEmptyAndIsNumber(data.price)
+   isNotEmptyAndIsString(data.name) &&
+   isNotEmptyAndIsString(data.description) &&
+   isNotEmptyAndIsString(data.category) &&
+   isNotEmptyAndIsNumber(data.price)
  ) {
  next();
  } else {
