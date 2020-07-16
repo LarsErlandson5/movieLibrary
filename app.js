@@ -25,7 +25,7 @@ function buildTable(movieArray)
 
     }
      table.innerHTML = row
-}
+
 //PUT function
 //Need to add id for event handler
 $("#").submit(editMovies);
