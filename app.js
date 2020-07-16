@@ -1,6 +1,10 @@
 $(document).ready (function () {
     $.ajax({
+<<<<<<< HEAD
+        url: "https://github.com/LarsErlandson5/movieLibrary",
+=======
         url: "http://localhost:3000/api/movies",
+>>>>>>> cb82307bfae9c183bea7b3023061dbccabc90b2e
         dataType: "json",
         type: 'get',
         success: function (response) {
