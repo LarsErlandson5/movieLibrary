@@ -37,27 +37,26 @@ app.delete("/api/movies/:id", (req, res) => {
     let updatedDataSet = repoContext.movies.deleteMovies(id);
 });
 app.get("/api/movies", (req, res) => {
-    let movies = repoContext.movies.findAllProducts();
+    let movies = repoContext.movies.findAllMovies();
     res.send(movies);
 })
 app.get("/api/movies/:id", (req, res) => {
     let id = req.params.id;
-    let movies = repoContext.movies.findProductById(id);
+    let movies = repoContext.movies.findMoviesById(id);
     res.send(movies);
 })
 app.post("/api/movies", (req, res) => {
     let newMovies = req.body;
-    let addedMovies = repoContext.movies.createProduct(newProduct);
-    res.send(addedProduct);
+    let addedMovies = repoContext.movies.createMovies(newMovies);
+    res.send(addedMovies);
 });
 app.put("/api/products", (req, res) => {
-    let productToUpdate = req.body;
-    let updatedmovies = repoContext.movies.updateProduct(productToUpdate);
+    let moviesToUpdate = req.body;
+    let updatedmovies = repoContext.movies.updateMovies(moviesToUpdate);
     res.send(updatedmovies);
 });
 app.delete("/api/products/:id", (req, res) => {
     let id = req.params.id;
-    let updatedDataSet = repoContext.movies.deleteProduct(id);
+    let updatedDataSet = repoContext.movies.deleteMovies(id);
     res.send(updatedDataSet);
 });
-
