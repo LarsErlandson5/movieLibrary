@@ -1,11 +1,11 @@
 $(document).ready(function () {
     $.ajax({
-        url: "http://www.devcodecampmusiclibrary.com/api/music",
+        url: "http://localhost:3000/api/movies",
         dataType: "json",
         type: 'get',
         success: function (data, testStatus, jQxhr) {
             console.log(data[1]);
-            musicTable = buildTable(data)
+            movieTable = buildTable(data)
         }
     });
 })
@@ -26,4 +26,3 @@ function buildTable(input) {
     }
 table.innerHTML = row;
 }
-// test test
