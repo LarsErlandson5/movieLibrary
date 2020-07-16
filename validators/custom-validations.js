@@ -14,11 +14,11 @@ exports.body = (req, res, next) => {
  (method == "POST"
  ? isNullOrUndefined(data.id)
  : isNotEmptyAndIsNumber(data.id)) &&
-   isNotEmptyAndIsString(data.name) &&
-   isNotEmptyAndIsString(data.description) &&
-   isNotEmptyAndIsString(data.category) &&
-   isNotEmptyAndIsNumber(data.price)
- ) {
+   isNotEmptyAndIsString(data.title) &&
+   isNotEmptyAndIsString(data.director) &&
+   isNotEmptyAndIsString(data.genre)
+ )
+}
  next();
  } else {
  res.status(400).send({

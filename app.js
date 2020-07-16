@@ -32,10 +32,10 @@ $("#").submit(editMovies);
 
 function editMovies(event){
 let moviesUpdate = {
-  id: parseInt (this.["id"].value),
-  title: this.["title"].value,
-  director: this.["director"].value,
-  genre: this.["genre"].value,
+  id: parseInt (this["id"].value),
+  title: this["title"].value,
+  director: this["director"].value,
+  genre: this["genre"].value,
 }
 $(document).ready(function() {
 $.ajax({
