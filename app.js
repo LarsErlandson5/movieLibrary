@@ -5,7 +5,7 @@ $(document).ready(function () {
         type: 'get',
         success: function (data, testStatus, jQxhr) {
             console.log(data[1]);
-            movieTable = buildTable(data)
+          
         }
     });
 })
