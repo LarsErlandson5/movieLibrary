@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-        url: "http://www.devcodecampmusiclibrary.com/api/music",
+        url: "https://github.com/LarsErlandson5/movieLibrary",
         dataType: "json",
         type: 'get',
         success: function (data, testStatus, jQxhr) {
