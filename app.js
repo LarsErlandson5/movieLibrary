@@ -1,10 +1,6 @@
 $(document).ready (function () {
     $.ajax({
-<<<<<<< HEAD
-        url: "https://github.com/LarsErlandson5/movieLibrary",
-=======
         url: "http://localhost:3000/api/movies",
->>>>>>> cb82307bfae9c183bea7b3023061dbccabc90b2e
         dataType: "json",
         type: 'get',
         success: function (response) {
@@ -16,7 +12,7 @@ $(document).ready (function () {
 })
 
 function buildTable(movieArray) {
-    let makeTable = document.getElementById("testID")
+    let makeTable = document.getElementById("movieTable")
     for (let i = 0; i < movieArray.length; i++) {
       let row = `<tr>
             <td>${movieArray[i].title}</td>
