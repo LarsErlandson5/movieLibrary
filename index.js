@@ -1,7 +1,9 @@
+var cors = require("cors");
 const repoContext = require("./repository/repository-wrapper.js");
 const validators = require("./validators/custom-validations.js");
 const express = require('express');
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
