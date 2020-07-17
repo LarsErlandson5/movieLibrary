@@ -36,6 +36,7 @@ let moviesUpdate = {
   title: this["title"].value,
   director: this["director"].value,
   genre: this["genre"].value,
+  image: this["image"].value,
 }
 $(document).ready(function() {
 $.ajax({
@@ -62,6 +63,7 @@ let moviesInfoCreated = {
   title: this["title"].value,
   director: this["director"].value,
   genre: this["genre"].value,
+  image: this["image"].value,
 }
 $(document).ready( function() {
 $.ajax({
