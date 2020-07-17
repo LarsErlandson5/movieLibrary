@@ -34,15 +34,15 @@
 
             <table class="table table-sml-dark">
                 <thead>
-                  <!-- <tr>
-                    <th scope="col">Artist</th>
-                    <th scope="col">Album</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Genre</th>
-                    <th scope="col">Release Date</th>
-                  </tr> -->
+                   <tr>
+                    <th data-field="id" data-sortable="true">ID</th>
+                    <th data-field="title" data-sortable="true">Title</th>
+                    <th data-field="director" data-sortable="true">Director</th>
+                    <th data-field="genre" data-sortable="true">Genre</th>
+                  </tr> 
                 </thead>
-                <tbody id ="movieTable">
+                <tbody id ="movieTable" data-row-style="rowStyle" data-pagination="true" data-page-size="15">
+                    
                 </tbody>
             </table>
 
