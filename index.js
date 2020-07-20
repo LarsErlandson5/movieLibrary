@@ -6,8 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => validators.body(req, res, next));
 app.listen(3000, function () {
     console.log("Server started. Listening on port 3000.");

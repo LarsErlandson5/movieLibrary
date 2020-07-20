@@ -21,6 +21,7 @@ function buildTable(movieArray)
             <td>${movieArray[i].title}</td>
             <td>${movieArray[i].director}</td>
             <td>${movieArray[i].genre}</td>
+            <td>${movieArray[i].image}</td>
               </tr>`
 
     }
@@ -36,6 +37,7 @@ let moviesUpdate = {
   title: this["title"].value,
   director: this["director"].value,
   genre: this["genre"].value,
+  image: this["image"].value,
 }
 $(document).ready(function() {
 $.ajax({
@@ -62,6 +64,7 @@ let moviesInfoCreated = {
   title: this["title"].value,
   director: this["director"].value,
   genre: this["genre"].value,
+  image: this["image"].value,
 }
 $(document).ready( function() {
 $.ajax({
