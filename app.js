@@ -9,6 +9,13 @@ $(document).ready (function () {
 
         }
     });
+    $("#search-input").on('keyup',function(){
+      console.log("isworking")
+      let value = $(this).val()
+      console.log(value)
+
+      //buildTable(movieArray)
+    })
 })
 
 function buildTable(movieArray){
@@ -26,3 +33,4 @@ function buildTable(movieArray){
     }
      table.innerHTML = row
   }
+

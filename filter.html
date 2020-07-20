@@ -8,15 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+     <script src="app.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css"> 
-    <!--Filter script-->
-    <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
-    <script src="extensions/filter-control/bootstrap-table-filter-control.js"></script>
 
     <title>Movie Project</title>
 </head>
@@ -38,8 +35,8 @@
         <body>
             <div class="row">
                 <div class="col">
-                    <div class="card card-body">
-                        <input id="search-input"class="form-control" type="text">
+                    <div class="card">
+                        <input id ="search-input" class="form-control" type="text">
                     </div>
                 </div>
             </div>
@@ -52,8 +49,7 @@
                     <th data-field="director" data-sortable="true">Director</th>
                   </tr> 
                 </thead>
-                <tbody id ="movieTable" data-row-style="rowStyle" data-search="true" data-filter-control="true"
-                data-search-align="left" data-filter-show-clear="true">
+                <tbody id ="movieTable" >
                 </tbody>
             </table>
 
