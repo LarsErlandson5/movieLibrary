@@ -4,89 +4,91 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css"> 
-    <!--Filter script-->
-    <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
-    <script src="extensions/filter-control/bootstrap-table-filter-control.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--Filter script-->
+  <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
+  <script src="extensions/filter-control/bootstrap-table-filter-control.js"></script>
 
-    <title>Movie Project</title>
+  <title>Movie Project</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <a href="#" class="navbar-brand">Films</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navBarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navBarMenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Films Table</a>
-                    </li>
-        </nav>
+  <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Films</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navBarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navBarMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Films Table</a>
+          </li>
+    </nav>
 
-        <body>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <input id ="search-input" class="form-control" value="Search" type="text">
-                    </div>
-                </div>
-            </div>
-
-            <table class="table table-sml-dark">
-                <thead>
-                   <tr>
-                    <th data-field="id" data-sortable="true">Title</th>
-                    <th data-field="title" data-sortable="true">Director</th>
-                    <th data-field="director" data-sortable="true">Genre</th>
-                  </tr> 
-                </thead>
-                <tbody id ="movieTable" data-row-style="rowStyle" data-pagination="true" data-page-size="15">
-                    
-                </tbody>
-            </table>
-
-        </body>
-        <div class="form-group row">
-          <label for="example-text-input" class="col-2 col-form-label-bold"><strong>ID</strong></label>
-          <div class="col-10">
-            <input class="form-control" type="text" value="" id="id">
+    <body>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <input id="search-input" class="form-control" value="Search" type="text">
           </div>
         </div>
+      </div>
+
+      <table class="table table-sml-dark">
+        <thead>
+          <tr>
+            <th data-field="id" data-sortable="true">Title</th>
+            <th data-field="title" data-sortable="true">Director</th>
+            <th data-field="director" data-sortable="true">Genre</th>
+          </tr>
+        </thead>
+        <tbody id="movieTable" data-row-style="rowStyle" data-pagination="true" data-page-size="15">
+
+        </tbody>
+      </table>
+
+    </body>
+    <form action="">
+      <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label-bold"><strong>ID</strong></label>
+        <div class="col-10">
+          <input class="form-control" type="text" value="" id="id">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label-bold"><strong>Title</strong></label>
+        <div class="col-10">
+          <input class="form-control" type="text" value="Enter Movie Name" id="title">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-search-input" class="col-2 col-form-label"><strong>Director</strong></label>
+        <div class="col-10">
+          <input class="form-control" type="search" value="Enter Director Name here" id="director">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-email-input" class="col-2 col-form-label"><strong>Genre</strong></label>
+        <div class="col-10">
+          <input class="form-control" type="email" value="Enter Genre" id="Genre">
+        </div>
         <div class="form-group row">
-            <label for="example-text-input" class="col-2 col-form-label-bold"><strong>Title</strong></label>
-            <div class="col-10">
-              <input class="form-control" type="text" value="Enter Movie Name" id="title">
-            </div>
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
-          <div class="form-group row">
-            <label for="example-search-input" class="col-2 col-form-label"><strong>Director</strong></label>
-            <div class="col-10">
-              <input class="form-control" type="search" value="Enter Director Name here" id="director">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="example-email-input" class="col-2 col-form-label"><strong>Genre</strong></label>
-            <div class="col-10">
-              <input class="form-control" type="email" value="Enter Genre" id="Genre">
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-10">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </div>
-        </div>         
-    </div>
+        </div>
+    </form>
+  </div>
+  </div>
 </body>
 
 </html>
