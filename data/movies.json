@@ -35,6 +35,34 @@
     "title": "300",
     "director": "Zack Snyder",
     "genre": "Action",
+<<<<<<< HEAD
   
+=======
+    "Image": "https://images-na.ssl-images-amazon.com/images/I/51MtJBws9ZL._AC_.jpg"
+  },
+  {
+    "id": 7,
+    "title": "LArs",
+    "director": "Greg",
+    "genre": "Mike"
+  },
+  {
+    "id": 8,
+    "title": "yo",
+    "director": "here",
+    "genre": "we go"
+  },
+  {
+    "id": 9,
+    "title": "Lars",
+    "director": "Erlandson",
+    "genre": "ok"
+  },
+  {
+    "id": 10,
+    "title": "Greg",
+    "director": "It",
+    "genre": "Works"
+>>>>>>> d68a84dc2ec5bfab33f8515cde4f3948397afd97
   }
 ]
