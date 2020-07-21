@@ -1,3 +1,4 @@
+
 $(document).ready (function () {
     $.ajax({
         url: "http://localhost:3000/api/movies",
@@ -7,13 +8,14 @@ $(document).ready (function () {
           movieArray = response
           movieTable = buildTable(movieArray)
 
+
         }
     });
 })
 
-function buildTable(movieArray)
-    let makeTable = document.getElementById("movieTable")
 
+function buildTable(movieArray){
+    let makeTable = document.getElementById("movieTable")
     let table = document.getElementById("movieTable")
     let row = ""
     for (let i = 0; i < movieArray.length; i++) {
@@ -26,12 +28,11 @@ function buildTable(movieArray)
 
     }
      table.innerHTML = row
+}
 
-//PUT function
-//Need to add id for event handler
-$("go").submit(editMovies);
 
-function editMovies(event){
+$("goput").submit(editMovies);
+function editMovies(e){
 let moviesUpdate = {
   id: parseInt (this["id"].value),
   title: this["title"].value,
@@ -47,7 +48,7 @@ type: 'put',
 data: JSON.stringify(moviesUpdate),
 success: function (data) {
   alert("Update successful!")
-  buildTable(movieArray);
+  buildTable(movieArray)
 }
 
 
@@ -55,9 +56,8 @@ success: function (data) {
 
 });
 })
-// POST function
-//Need to add id for event handler
-$("goput").submit(addMovies);
+
+$("go").submit(addMovies);
 function addMovies(event){
 let moviesInfoCreated = {
   id: parseInt (this["id"].value),
@@ -74,7 +74,7 @@ type: 'post',
 data: JSON.stringify(moviesInfoCreated),
 success: function (data) {
   alert("Update successful!")
-  buildTable(movieArray);
+  buildTable(movieArray)
 }
 
 
