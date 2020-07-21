@@ -29,7 +29,7 @@ function buildTable(movieArray)
 
 //PUT function
 //Need to add id for event handler
-$("#").submit(editMovies);
+$("go").submit(editMovies);
 
 function editMovies(event){
 let moviesUpdate = {
@@ -37,7 +37,7 @@ let moviesUpdate = {
   title: this["title"].value,
   director: this["director"].value,
   genre: this["genre"].value,
-  image: this["image"].value,
+
 }
 $(document).ready(function() {
 $.ajax({
@@ -57,14 +57,14 @@ success: function (data) {
 })
 // POST function
 //Need to add id for event handler
-$("#").submit(addMovies);
+$("goput").submit(addMovies);
 function addMovies(event){
 let moviesInfoCreated = {
   id: parseInt (this["id"].value),
   title: this["title"].value,
   director: this["director"].value,
   genre: this["genre"].value,
-  image: this["image"].value,
+
 }
 $(document).ready( function() {
 $.ajax({
