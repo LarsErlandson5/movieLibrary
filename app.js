@@ -9,9 +9,11 @@ $(document).ready (function () {
 
         }
     });
+    $("#goput").submit(addMovies);
+     $("go").submit(editMovies);
 })
 
- $("go").submit(editMovies);
+
 
 function editMovies(event){
 let moviesUpdate = {
@@ -20,6 +22,7 @@ let moviesUpdate = {
  director: this["director"].value,
  genre: this["genre"].value,
  }
+
  $(document).ready(function() {
 $.ajax({
 url: "http://localhost:3000/api/movies",
@@ -36,28 +39,33 @@ success: function (data) {
 
 
 
-$("goput").submit(addMovies);
-function addMovies(event){
+
+
+function addMovies(){
+  event.preventDefault();
+
+  console.log("HELLO");
 let moviesInfoCreated = {
-  id: parseInt (this["id"].value),
   title: this["title"].value,
   director: this["director"].value,
-  genre: this["genre"].value,
+  genre: this["Genre"].value,
 
 }
+console.log('movie', moviesInfoCreated);
 $(document).ready( function() {
-$.ajax({
-url: "http://localhost:3000/api/movies",
-dataType: "json",
-type: 'post',
-data: JSON.stringify(moviesInfoCreated),
-success: function (data) {
-  alert("Update successful!")
-  buildTable(movieArray);
-}
+  $.ajax({
+    url: "http://localhost:3000/api/movies",
+    dataType: "json",
+    contentType: "application/json",
+    type: 'post',
+    data: JSON.stringify(moviesInfoCreated),
+    success: function (data) {
+      alert("Update successful!")
+      buildTable(movieArray);
+    }
 
-});
-})
+    });
+  })
 }
 
 function buildTable(movieArray){

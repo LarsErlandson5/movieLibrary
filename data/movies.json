@@ -36,5 +36,29 @@
     "director": "Zack Snyder",
     "genre": "Action",
     "Image": "https://images-na.ssl-images-amazon.com/images/I/51MtJBws9ZL._AC_.jpg"
+  },
+  {
+    "id": 7,
+    "title": "LArs",
+    "director": "Greg",
+    "genre": "Mike"
+  },
+  {
+    "id": 8,
+    "title": "yo",
+    "director": "here",
+    "genre": "we go"
+  },
+  {
+    "id": 9,
+    "title": "Lars",
+    "director": "Erlandson",
+    "genre": "ok"
+  },
+  {
+    "id": 10,
+    "title": "Greg",
+    "director": "It",
+    "genre": "Works"
   }
 ]
