@@ -9,8 +9,8 @@ $(document).ready (function () {
 
         }
     });
-    $("#goput").submit(addMovies);
-     $("go").submit(editMovies);
+    $("goput").submit(addMovies);
+
 })
 
 
@@ -27,6 +27,7 @@ let moviesUpdate = {
 $.ajax({
 url: "http://localhost:3000/api/movies",
 dataType: "json",
+contentType: "application/json",
 type: 'put',
 data: JSON.stringify(moviesUpdate),
 success: function (data) {
