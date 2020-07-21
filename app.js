@@ -11,35 +11,16 @@ $(document).ready (function () {
     });
 })
 
-function buildTable(movieArray)
-    let makeTable = document.getElementById("movieTable")
-
-    let table = document.getElementById("movieTable")
-    let row = ""
-    for (let i = 0; i < movieArray.length; i++) {
-            row += `<tr>
-            <td>${movieArray[i].title}</td>
-            <td>${movieArray[i].director}</td>
-            <td>${movieArray[i].genre}</td>
-            <td>${movieArray[i].image}</td>
-              </tr>`
-
-    }
-     table.innerHTML = row
-
-//PUT function
-//Need to add id for event handler
-$("go").submit(editMovies);
+ $("go").submit(editMovies);
 
 function editMovies(event){
 let moviesUpdate = {
-  id: parseInt (this["id"].value),
+ id: parseInt (this["id"].value),
   title: this["title"].value,
-  director: this["director"].value,
-  genre: this["genre"].value,
-
-}
-$(document).ready(function() {
+ director: this["director"].value,
+ genre: this["genre"].value,
+ }
+ $(document).ready(function() {
 $.ajax({
 url: "http://localhost:3000/api/movies",
 dataType: "json",
@@ -49,14 +30,12 @@ success: function (data) {
   alert("Update successful!")
   buildTable(movieArray);
 }
-
-
-
-
 });
-})
-// POST function
-//Need to add id for event handler
+ });
+}
+
+
+
 $("goput").submit(addMovies);
 function addMovies(event){
 let moviesInfoCreated = {
@@ -77,8 +56,23 @@ success: function (data) {
   buildTable(movieArray);
 }
 
-
-
-
 });
 })
+}
+
+function buildTable(movieArray){
+  let makeTable = document.getElementById("movieTable")
+
+  let table = document.getElementById("movieTable")
+  let row = ""
+  for (let i = 0; i < movieArray.length; i++) {
+          row += `<tr>
+          <td>${movieArray[i].title}</td>
+          <td>${movieArray[i].director}</td>
+          <td>${movieArray[i].genre}</td>
+          <td>${movieArray[i].image}</td>
+            </tr>`
+
+  }
+   table.innerHTML = row
+}
