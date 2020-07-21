@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "The Departed",
-    "director": "Martin Scorsese",
+    "title": "star wars",
+    "director": "george lucas",
     "genre": "RoCom",
     "Image": "https://images-na.ssl-images-amazon.com/images/I/51MtJBws9ZL._AC_.jpg"
   },
@@ -35,6 +35,9 @@
     "title": "300",
     "director": "Zack Snyder",
     "genre": "Action",
+<<<<<<< HEAD
+  
+=======
     "Image": "https://images-na.ssl-images-amazon.com/images/I/51MtJBws9ZL._AC_.jpg"
   },
   {
@@ -60,5 +63,6 @@
     "title": "Greg",
     "director": "It",
     "genre": "Works"
+>>>>>>> d68a84dc2ec5bfab33f8515cde4f3948397afd97
   }
 ]
