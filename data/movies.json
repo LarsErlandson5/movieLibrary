@@ -25,9 +25,9 @@
   },
   {
     "id": 5,
-    "title": "Die Hard",
-    "director": "John McTiernan",
-    "genre": "Action"
+    "title": "BAT<MAN",
+    "director": "Larry",
+    "genre": "Awesome"
   },
   {
     "id": 6,
@@ -76,5 +76,11 @@
     "title": "sdfjlkasdj",
     "director": "sadlfjlasdk",
     "genre": "aslkjfak;"
+  },
+  {
+    "id": 14,
+    "title": "joe",
+    "director": "Enter Director Name here",
+    "genre": "Enter Genre"
   }
 ]

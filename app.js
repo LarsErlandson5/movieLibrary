@@ -81,6 +81,7 @@ function buildTable(movieArray){
   let row = ""
   for (let i = 0; i < movieArray.length; i++) {
           row += `<tr>
+          <td>${movieArray[i].id}</td>
           <td>${movieArray[i].title}</td>
           <td>${movieArray[i].director}</td>
           <td>${movieArray[i].genre}</td>
