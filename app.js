@@ -14,7 +14,7 @@ $(document).ready (function () {
          $("go").submit(addMovies);
 
 
-})
+}
 
 
 
