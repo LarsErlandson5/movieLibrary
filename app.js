@@ -12,6 +12,11 @@ $(document).ready (function () {
         }
     });  $("goput").submit(editMovies);
          $("go").submit(addMovies);
+         $("#search-input").on('keyup',function(){
+          console.log("isworking")
+          let value = $(this).val()
+         })
+    
 
 
 })
