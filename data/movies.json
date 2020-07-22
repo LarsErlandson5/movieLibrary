@@ -3,8 +3,7 @@
     "id": 1,
     "title": "star wars",
     "director": "george lucas",
-    "genre": "RoCom",
-    "Image": "https://images-na.ssl-images-amazon.com/images/I/51MtJBws9ZL._AC_.jpg"
+    "genre": "RoCom"
   },
   {
     "id": 2,
@@ -34,11 +33,7 @@
     "id": 6,
     "title": "300",
     "director": "Zack Snyder",
-    "genre": "Action",
-<<<<<<< HEAD
-  
-=======
-    "Image": "https://images-na.ssl-images-amazon.com/images/I/51MtJBws9ZL._AC_.jpg"
+    "genre": "Action"
   },
   {
     "id": 7,
@@ -63,6 +58,17 @@
     "title": "Greg",
     "director": "It",
     "genre": "Works"
->>>>>>> d68a84dc2ec5bfab33f8515cde4f3948397afd97
+  },
+  {
+    "id": 11,
+    "title": "asflk;dsaj",
+    "director": "lsakdjlksafj",
+    "genre": "lsdfajl"
+  },
+  {
+    "id": 12,
+    "title": "fklasdjfljs",
+    "director": "sdlfjalsdj",
+    "genre": "alsdkfjakl"
   }
 ]
