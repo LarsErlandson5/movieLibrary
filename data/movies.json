@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "title": "star wars",
-    "director": "george lucas",
-    "genre": "RoCom"
+    "title": "Star Wars",
+    "director": "George Lucas",
+    "genre": "Sci-fi"
   },
   {
     "id": 2,
     "title": "The Dark Knight",
-    "director": "Drama",
-    "genre": "Christopher Nolan"
+    "director": "Christopher Nolan",
+    "genre": "Drama"
   },
   {
     "id": 3,
@@ -25,9 +25,9 @@
   },
   {
     "id": 5,
-    "title": "BAT<MAN",
-    "director": "Larry",
-    "genre": "Awesome"
+    "title": "Empire Strikes Back",
+    "director": "Irvin Kershner",
+    "genre": "Sci-fi"
   },
   {
     "id": 6,
@@ -37,56 +37,20 @@
   },
   {
     "id": 7,
-    "title": "LArs",
-    "director": "Greg",
-    "genre": "Mike"
+    "title": "Phantom Menace",
+    "director": "George Lucas",
+    "genre": "Sci-fi"
   },
   {
     "id": 8,
-    "title": "yo",
-    "director": "here",
-    "genre": "we go"
+    "title": "Return of the Jedi",
+    "director": "Richard Marquand",
+    "genre": "Sci-fi"
   },
   {
     "id": 9,
-    "title": "44444444",
-    "director": "4444444",
-    "genre": "4444444"
-  },
-  {
-    "id": 10,
-    "title": "Greg",
-    "director": "It",
-    "genre": "Works"
-  },
-  {
-    "id": 11,
-    "title": "asflk;dsaj",
-    "director": "lsakdjlksafj",
-    "genre": "lsdfajl"
-  },
-  {
-    "id": 12,
-    "title": "fklasdjfljs",
-    "director": "sdlfjalsdj",
-    "genre": "alsdkfjakl"
-  },
-  {
-    "id": 13,
-    "title": "sdfjlkasdj",
-    "director": "sadlfjlasdk",
-    "genre": "aslkjfak;"
-  },
-  {
-    "id": 14,
-    "title": "joe",
-    "director": "Enter Director Name here",
-    "genre": "Enter Genre"
-  },
-  {
-    "id": 15,
-    "title": "Enter Movie Name",
-    "director": "Enter Director Name here",
-    "genre": "Enter Genre"
+    "title": "Attack of Killer Tomatoes",
+    "director": "John De Bello",
+    "genre": "Documentary"
   }
 ]
