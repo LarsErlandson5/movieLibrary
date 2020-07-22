@@ -15,6 +15,9 @@ $(document).ready (function () {
          $("#search-input").on('keyup',function(){
           console.log("isworking")
           let value = $(this).val()
+          console.log(`Value:`, value)
+          let data = searchTable(value,movieArray)
+          buildTable(data)
          })
     
 
@@ -94,4 +97,17 @@ function buildTable(movieArray){
 
   }
    table.innerHTML = row
+}
+
+function searchTable(value, data){
+  let filteredData = []
+  for (let i=0; i<data.length; i++){
+    value = value.toLowerCase()
+    let name = data[i].title.toLowerCase()
+    if (name.includes(value)){
+      filteredData.push(data[i])
+    }
+
+  }
+  return filteredData;
 }
