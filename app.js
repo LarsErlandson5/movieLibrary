@@ -14,12 +14,13 @@ $(document).ready (function () {
          $("go").submit(addMovies);
 
 
-}
+})
 
 
 
 
-function editMovies(e){
+function editMovies(){
+  event.preventDefault();
   console.log("hello");
 let moviesUpdate = {
  id: parseInt (this["id"].value),
