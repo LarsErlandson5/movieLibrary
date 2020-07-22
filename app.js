@@ -13,9 +13,7 @@ $(document).ready (function () {
     });  $("goput").submit(editMovies);
          $("go").submit(addMovies);
          $("#search-input").on('keyup',function(){
-          console.log("isworking")
           let value = $(this).val()
-          console.log(`Value:`, value)
           let data = searchTable(value,movieArray)
           buildTable(data)
          })
@@ -29,7 +27,6 @@ $(document).ready (function () {
 
 function editMovies(){
   event.preventDefault();
-  console.log("hello");
 let moviesUpdate = {
  id: parseInt (this["id"].value),
   title: this["title"].value,
@@ -58,7 +55,6 @@ success: function (data) {
 
 function addMovies(){
   event.preventDefault();
-  console.log("hello")
 let moviesInfoCreated = {
   title: this["title"].value,
   director: this["director"].value,
